@@ -1,0 +1,42 @@
+# Secrets & credentials
+*.env
+*.pfx
+*.pem
+*.key
+secrets/
+**/connections.json
+
+# Power BI temp / cache
+*.pbix.tmp
+*.pbidsource
+PBIDesktopTemp/
+
+# OS / IDE
+Thumbs.db
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Local data — never commit real candidate PII
+data/raw/
+data/exports/
+data/*.csv
+data/*.xlsx
+!data/samples/*.csv
+!data/samples/*.xlsx
+
+# PowerShell transcripts / logs
+*.log
+transcripts/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Azure / Bicep build artifacts
+bin/
+obj/
+*.bicepparam.local
